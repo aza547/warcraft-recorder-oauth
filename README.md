@@ -1,6 +1,4 @@
-Deploys an OpenAuth self-hosted OAuth server on Cloudflare.
-
-To see the login page in action click [here](https://warcraft-recorder-oauth.alex-kershaw4.workers.dev/password/authorize).
+Deploys an OpenAuth self-hosted OAuth server on Cloudflare. To see the login page in action click [here](https://warcraft-recorder-oauth.alex-kershaw4.workers.dev/password/authorize).
 
 OpenAuth Docs
 - https://openauth.js.org/
