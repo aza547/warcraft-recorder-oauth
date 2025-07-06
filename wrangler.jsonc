@@ -7,13 +7,16 @@
 	"name": "warcraft-recorder-oauth",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-07-05",
-	"assets": {
-		"binding": "ASSETS",
-		"directory": "./public"
-	},
+  "compatibility_flags": ["nodejs_compat"],
 	"observability": {
 		"enabled": true
-	}
+	},
+  "kv_namespaces": [
+    {
+      "binding": "OpenAuthKV",
+      "id": "a2d4ebe1cb6b4a7f8cad5808b2c3b8e6"
+    }
+  ]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
