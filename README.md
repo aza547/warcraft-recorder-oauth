@@ -1,11 +1,11 @@
 Deploys an OpenAuth self-hosted OAuth server on Cloudflare with WCR branding.
 
 To see the login page in action:
-https://warcraft-recorder-oauth.alex-kershaw4.workers.dev/password/authorize
+- https://warcraft-recorder-oauth.alex-kershaw4.workers.dev/password/authorize
 
 OpenAuth Docs:
-https://openauth.js.org/
-https://github.com/toolbeam/openauth
+- https://openauth.js.org/
+- https://github.com/toolbeam/openauth
 
 The WCR website is a "single page application" (SPA) by their standards. It would need setup to point to the OAuth server on login. Then some plumbing to handle code exchange and access/refresh tokens as per their docs. Expecting this could solve the problem of having to login every 12 hours on the website.
 
