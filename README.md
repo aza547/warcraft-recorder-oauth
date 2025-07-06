@@ -1,21 +1,18 @@
-```txt
-npm install
-npm run dev
-```
+Deploys an OpenAuth self-hosted OAuth server on Cloudflare with WCR branding.
 
-```txt
-npm run deploy
-```
+To see the login page in action:
+https://warcraft-recorder-oauth.alex-kershaw4.workers.dev/password/authorize
 
-[For generating/synchronizing types based on your Worker configuration run](https://developers.cloudflare.com/workers/wrangler/commands/#types):
+OpenAuth Docs:
+https://openauth.js.org/
+https://github.com/toolbeam/openauth
 
-```txt
-npm run cf-typegen
-```
+- The WCR website is a "single page application" (SPA) by their standards. 
+- It would need setup to point to the OAuth server on login.
+- Then some plumbing to handle code exchange and access/refresh tokens as per their docs.
+- Expecting this could solve the problem of having to login every 12 hours on the website.
 
-Pass the `CloudflareBindings` as generics when instantiation `Hono`:
-
-```ts
-// src/index.ts
-const app = new Hono<{ Bindings: CloudflareBindings }>()
-```
+- Unclear if it makes sense to use this for the app. The username and password auth there works just fine, but having two sources of truth for logins seems a bad idea.
+- I doubt OpenAuth will validate passwords for us on demand, but might be worth looking.
+- There doesn't seem to be a way to revoke tokens currently. https://github.com/toolbeam/openauth/issues/249
+- Also migration of existing users is possibly painful.
