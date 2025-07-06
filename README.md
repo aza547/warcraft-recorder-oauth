@@ -1,9 +1,8 @@
-Deploys an OpenAuth self-hosted OAuth server on Cloudflare with WCR branding.
+Deploys an OpenAuth self-hosted OAuth server on Cloudflare.
 
-To see the login page in action:
-- https://warcraft-recorder-oauth.alex-kershaw4.workers.dev/password/authorize
+To see the login page in action click [here](https://warcraft-recorder-oauth.alex-kershaw4.workers.dev/password/authorize).
 
-OpenAuth Docs:
+OpenAuth Docs
 - https://openauth.js.org/
 - https://github.com/toolbeam/openauth
 
